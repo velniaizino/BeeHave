@@ -17,9 +17,11 @@ class Life(pygame.sprite.Sprite):
         self.image = pygame.transform.scale(
             pygame.image.load("images/grey_heart.png"), (30, 30)
         )
+
     def get_life(self):
         self.image = pygame.transform.scale(
             pygame.image.load("images/heart.png"), (30, 30)
         )
+
     def draw(self, screen):
         screen.blit(self.image, self.rect)

@@ -231,8 +231,8 @@ def main():
             player.update()
             # obstacle loop
             for obstacle in obstacles_list:
-                obstacle.update()
                 obstacle.draw(screen)
+                obstacle.update()
                 # check if obstacle is off-screen
                 if obstacle.rect.y > obstacle.height:
                     obstacle.kill()
